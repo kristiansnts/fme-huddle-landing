@@ -39,7 +39,7 @@ main {
 .information {
     text-align: center;
     color: #ffffff;
-    width: 265px;
+    width: 70%;
     margin: 10px auto;
 }
 
@@ -67,7 +67,7 @@ button:active {
 }
 
 .cta {
-    width: 60%;
+    width: 200px;
     height: 30px;
     border-radius: 30px;
     font-size: .7rem;
@@ -110,7 +110,7 @@ footer button i {
 
     .information {
         text-align: left;
-        width: 300px;
+        width: 500px;
         margin-top: 30px;
         margin-right: 20px;
         margin-left: 0px;
