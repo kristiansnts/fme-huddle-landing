@@ -10,18 +10,115 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: url('images/bg-mobile.svg'), var(--violet);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-img {
-    width: 50%;
+header {
+    margin: 30px 5%;
+    padding: 0 20px;
+}
+
+header img {
+    width: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration img {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.information {
+    text-align: center;
+    color: #ffffff;
+    width: 265px;
+    margin: 10px auto;
+}
+
+.information .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.information .info {
+    font-size: .8rem;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:active {
+    background-color: var(--magenta);
+    color: #ffffff;
+}
+
+.cta {
+    width: 60%;
+    height: 30px;
+    border-radius: 30px;
+    font-size: .7rem;
+    color: var(--violet);
+}
+
+footer {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--violet);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+footer button i {
+    padding-left: 2px;
+    padding-top: 1px;
 }
 
 @media screen and (min-width: 600px) {
     body {
         background: url('images/bg-desktop.svg'), var(--violet);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .information {
+        text-align: left;
+        width: 300px;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+    footer {
+        position: absolute;
+        right: 5%;
+        bottom: 2%;
     }
 }
